@@ -190,3 +190,288 @@ h1 {
 }
 
 
+/*RESULTS*/  
+
+/*-------hebergements/article-------*/
+#accommodation {
+    width: 100%;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+#accommodation span {
+    font-family: 'Raleway-ExtraBold' , sans-serif , serif;
+}
+#accommodation article h2 , article h4 {
+    margin-left: 40px;
+}
+#accommodation article {
+    width: 65%;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: #F2F2F2 1px solid;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+#linkscontainer {
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+#linkscontainer a {
+    width: 270px;
+    height: 200px;
+    border: white 1px solid;
+    background-color: white;
+    border-radius: 15px;
+    padding: 3px 3px 0px 3px;
+    box-shadow: 0 0 5px 0.2em #e2e2e2;
+}
+#linkscontainer a p {
+    margin: 0px 0px 5px 10px;
+}
+#linkscontainer a img {
+    width: 100%; 
+    height: 60%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.bluestar {
+    color: #0065FC;
+    font-size:  0.9em;
+}
+.greystar {
+    color: #d9d9d9;
+    font-size:  0.9em;
+}
+/*-------hebergements/aside-------*/
+aside {
+    width: 30%;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: #F2F2F2 1px solid;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+#asidecontainer {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#asidecontainer a {
+    width: 360px;
+    height: 140px;
+    border: white 1px solid;
+    background-color: white;
+    border-radius: 15px;
+    padding: 3px 0px 3px 3px;
+    box-shadow: 0 0 5px 0.2em #e2e2e2;
+}
+#asidecontainer a img {
+    width: 130px;
+    height: 100%;
+    float: left;
+    object-fit: cover;
+    border-radius: 15px 0px 0px 15px;
+    margin-right: 20px;
+}
+#asidetitle {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.stars {
+    padding-top: 15px;
+    font-size:  0.9em;
+}
+
+
+/* ACTIVITY* ---------------------------------------------------------------------------------------------*/
+
+.activity h3 {
+    margin-left: 40px;
+    padding-bottom: 10px;
+
+    
+    
+}
+
+.activity {
+    height:350px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+
+.tiles {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    
+
+
+}
+
+.tiles1  {
+    width: 20%;
+    height: 100%x;
+    border-radius: 10px;
+    background-color: white;
+    object-fit: cover;
+
+
+}
+
+.tiles1 img {
+    width: 100%;
+    height: 90%;
+    margin: 0 0 0 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+.tiles2 {
+    width: 20%;
+    height: 90%;
+    border-radius: 10px;
+    background-color:white;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#Pomegues {
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+#Pomegues img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+
+}
+
+#Frioul {
+    width: 100%;
+    height: 25%;
+    border-radius: 10px;
+}
+
+#Frioul img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.tiles3 {
+    width: 20%;
+    height: 90%;
+    border-radius: 10px;
+    background-color:white;
+    object-fit: cover;
+    padding-bottom: 15px;
+}
+
+
+
+.tiles3 img {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.tiles4 {
+    width: 20%;
+    height: 90%;
+    border-radius: 10px;
+    background-color:white;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#notredame{
+    width: 100%;
+    height: 35%;
+    border-radius: 10px;
+}
+
+#notredame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#longchamp {
+    width: 100%;
+    height: 35%;
+    border-radius: 10px;
+}
+
+#longchamp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+/* SECTION FOOTER ----------------------------------------------------------------------------------------*/
+footer {
+background-color: #f2f2f2;
+margin-top: 105px;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+padding-left:40px;
+
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    margin-right:270px ;
+    
+}
+
+
+
