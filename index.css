@@ -1,9 +1,17 @@
+@font-face {
+    font-family: 'Raleway-VariableFont_wght';
+    src: url('fonts/Raleway-VariableFont_wght.ttf');
+}
+@font-face { 
+    font-family: 'Raleway-ExtraBold';
+    src: url('fonts/Raleway-ExtraBold.ttf');   
+}
 body { 
     width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: 'Raleway', sans-serif , serif;
+    font-family: 'Raleway-VariableFont_wght', sans-serif , serif;
 }
 header { 
     margin-right: 10%;
@@ -21,21 +29,18 @@ footer {
     background-color: #F2F2F2;
 }
 h1 , h2 , h3 , h4 {
-    font-family: 'Raleway', sans-serif , serif;
+    font-family: 'Raleway-ExtraBold', sans-serif , serif;
 }
 h1 , h2 , h3 {
     font-size: x-large;
 }
 a {
     text-decoration: none;
-    color:black;
 }
 p {
     color: black;
 }
-
-/*HEADER*/
-
+/*HEADER-------------------------------------------------------*/
 nav ul {
     display: flex;
     flex-direction: row;
@@ -43,12 +48,10 @@ nav ul {
 }
 nav ul li a {
     margin-right: 20px;
-    
     padding: 15px 20px 0 20px;     
 }
 #desktopnav {
     display: flex;
-    color:black;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -57,13 +60,13 @@ nav ul li a {
     border-top: #0065FC 2px solid;  
 }
 nav span {
-    font-weight:bold;
+    font-family: 'Raleway-ExtraBold' , sans-serif , serif;
     color: #0065FC;
 }
 #responsivenav {
     display: none;
 }
-#registernav {
+#register {
     margin: 0 5% 0 5%;
     display: flex;
     flex-direction: row;
@@ -72,29 +75,27 @@ nav span {
     margin-bottom: 20px;
     outline: none;
 }
-#buttonsresponsive {
+#accommodationandactivity {
     width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     border-bottom: #F2F2F2 1px solid;
 }
-#buttonsresponsive div {
+#accommodationandactivity div {
     width: 50%;
     display: flex;
     justify-content: center;
     border-bottom: #F2F2F2 2px solid;
     padding-bottom: 20px;
 }
-#abuttonsresponsive a:hover {
+#accommodationandactivity a:hover {
     color: #0065FC;
 }
-#buttonsresponsive div:hover {
+#accommodationandactivity div:hover {
     border-bottom: #0065FC 2px solid;
 }
-
-/* SEARCH*/
-
+/*SEARCH------------------------------------------------------*/
 label {
     background-color: #F2F2F2;
     padding: 17px 20px 15px 20px;
@@ -111,7 +112,7 @@ label {
     padding: 13px 0px 13px 15px;
     outline: none;
 }  
-.button1 {     
+.btn1 {     
     border: #0065FC 1px solid;
     border-radius: 0px 15px 15px 0px;
     padding: 16px 15px 15px 15px;
@@ -121,7 +122,7 @@ label {
     margin-left: -10px;
     font-size: large;  
 }
-.button1 .fas {
+.btn1 .fas {
     display: none;
 }
 form {
@@ -139,12 +140,12 @@ h1 {
     align-items: baseline;
     font-family: 'Raleway-ExtraBold' , sans-serif , serif;
 }
-#button2container { 
+#btn2container { 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.button2 {
+.btn2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -163,7 +164,7 @@ h1 {
     font-family: 'Raleway-ExtraBold' , sans-serif , serif;
     font-size: medium;
 }
-.button2 .fas {
+.btn2 .fas {
     margin-right: 10px;
     margin-left: -1px;
     padding: 13px;
@@ -172,7 +173,7 @@ h1 {
     color: #0065FC;
     background-color: #DEEBFF;
 }
-.button2:hover{
+.btn2:hover{
     color: white;
     background-color: #0065FC;
 }
@@ -188,25 +189,21 @@ h1 {
     padding: 5px 9px 5px 9px;
     margin-right: 15px;
 }
-
-
-/*RESULTS*/  
-
-/*-------hebergements/article-------*/
-#accommodation {
+/*-------RESULTS-------*/
+#results {
     width: 100%;  
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 3%;
 }
-#accommodation span {
+#results span {
     font-family: 'Raleway-ExtraBold' , sans-serif , serif;
 }
-#accommodation article h2 , article h4 {
+#results article h2 , article h4 {
     margin-left: 40px;
 }
-#accommodation article {
+#results article {
     width: 65%;
     height: 630px;
     display: flex;
@@ -216,7 +213,7 @@ h1 {
     background-color: #F2F2F2;
     border-radius: 15px;
 }
-#linkscontainer {
+#left {
     height: 450px;
     display: flex;
     flex-direction: row;
@@ -224,7 +221,7 @@ h1 {
     justify-content: space-evenly;
     align-content: space-between;
 }
-#linkscontainer a {
+#left a {
     width: 270px;
     height: 200px;
     border: white 1px solid;
@@ -233,10 +230,10 @@ h1 {
     padding: 3px 3px 0px 3px;
     box-shadow: 0 0 5px 0.2em #e2e2e2;
 }
-#linkscontainer a p {
+#left a p {
     margin: 0px 0px 5px 10px;
 }
-#linkscontainer a img {
+#left a img {
     width: 100%; 
     height: 60%;
     object-fit: cover;
@@ -250,7 +247,7 @@ h1 {
     color: #d9d9d9;
     font-size:  0.9em;
 }
-/*-------hebergements/aside-------*/
+/*-------Left-------*/
 aside {
     width: 30%;
     height: 630px;
@@ -262,7 +259,7 @@ aside {
     background-color: #F2F2F2;
     border-radius: 15px;
 }
-#asidecontainer {
+#right {
     width: 100%;
     height: 550px;
     display: flex;
@@ -270,7 +267,7 @@ aside {
     align-items: center;
     justify-content: space-evenly;
 }
-#asidecontainer a {
+#right a {
     width: 360px;
     height: 140px;
     border: white 1px solid;
@@ -279,7 +276,7 @@ aside {
     padding: 3px 0px 3px 3px;
     box-shadow: 0 0 5px 0.2em #e2e2e2;
 }
-#asidecontainer a img {
+#right a img {
     width: 130px;
     height: 100%;
     float: left;
@@ -287,7 +284,7 @@ aside {
     border-radius: 15px 0px 0px 15px;
     margin-right: 20px;
 }
-#asidetitle {
+#righttitle {
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -298,180 +295,76 @@ aside {
     padding-top: 15px;
     font-size:  0.9em;
 }
-
-
-/* ACTIVITY* ---------------------------------------------------------------------------------------------*/
-
-.activity h3 {
-    margin-left: 40px;
-    padding-bottom: 10px;
-
-    
-    
+/* TILES ----------------------------------------------*/
+#tiles {
+    margin-top: 5%;
 }
-
-.activity {
-    height:350px;
-    margin-left: 0px;
-    width: 100%;
-}
-
-
-.tiles {
+#tilescontainer {
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#tilescontainer p {
+    font-family: 'Raleway-ExtraBold' , sans-serif , serif;
+    padding-left: 20px;
+}
+.tiles1 {
+    width: 23%;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 0.2em #e2e2e2;
+}
+.tiles2 {
+    width: 23%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.tiles2 a {
     height: 100%;
-    justify-content: space-evenly;
-    
-
-
 }
-
-.tiles1  {
-    width: 20%;
-    height: 100%x;
-    border-radius: 10px;
-    background-color: white;
-    object-fit: cover;
-
-
-}
-
 .tiles1 img {
     width: 100%;
-    height: 90%;
-    margin: 0 0 0 0;
+    height: 88%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px 15px 0px 0px;
 }
-
-
-
-
-.tiles2 {
-    width: 20%;
-    height: 90%;
-    border-radius: 10px;
-    background-color:white;
-    object-fit: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#Pomegues {
+.tiles2 img {
     width: 100%;
-    height: 45%;
     object-fit: cover;
-    border-radius: 10px;
-
+    border-radius: 15px 15px 0px 0px;
 }
-
-#Pomegues img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    
-
+#pics1 {
+    height: 260px;
+    box-shadow: 0 0 5px 0.2em #e2e2e2;
+    border-radius: 15px;
 }
-
-#Frioul {
-    width: 100%;
-    height: 25%;
-    border-radius: 10px;
+#pics2 {
+    height: 170px;
+    box-shadow: 0 0 5px 0.2em #e2e2e2;
+    border-radius: 15px;
 }
-
-#Frioul img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+#pics3 , #pics4 {
+    height: 200px;
+    box-shadow: 0 0 5px 0.2em #e2e2e2;
+    border-radius: 15px;
 }
-
-
-
-.tiles3 {
-    width: 20%;
-    height: 90%;
-    border-radius: 10px;
-    background-color:white;
-    object-fit: cover;
-    padding-bottom: 15px;
+#pics1 img {
+    height: 75%;
 }
-
-
-
-.tiles3 img {
-    width: 100%;
-    height: 100%;
-    margin: 0 0 0 0;
-    object-fit: cover;
-    border-radius: 10px;
+#pics2 img {
+    height: 65%;
 }
-
-
-
-.tiles4 {
-    width: 20%;
-    height: 90%;
-    border-radius: 10px;
-    background-color:white;
-    object-fit: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#pics3  img , #pics4 img {
+    height: 70%;
 }
-
-#notredame{
-    width: 100%;
-    height: 35%;
-    border-radius: 10px;
-}
-
-#notredame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#longchamp {
-    width: 100%;
-    height: 35%;
-    border-radius: 10px;
-}
-
-#longchamp img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-
-
-/* SECTION FOOTER ----------------------------------------------------------------------------------------*/
-footer {
-background-color: #f2f2f2;
-margin-top: 105px;
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-start;
-padding-left:40px;
-
-}
-
+/*FOOTER---------------------------------------------------------*/
 footer div {
-    display: flex;
-    flex-direction: column;
-    margin-right:270px ;
-    
+    width: 19%;
+    margin-left: 10%;
+    padding-top: 20px;
 }
-
 
 
