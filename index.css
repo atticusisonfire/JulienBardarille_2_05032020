@@ -368,3 +368,523 @@ footer div {
 }
 
 
+
+/*MEDIA QUERIES ------------------------------------*/
+@media (max-width: 374px)/*smartphone-s*/ {
+    body {
+        width: auto;
+        margin: 0;
+    }
+    main {
+        margin: 0;
+    }
+    h1{
+        font-size: 1.3em;
+    }
+    h2 , h3 {
+        font-size: 1.2em;
+    }
+/*HEADER---------------------------------------------------------*/
+    header { 
+        margin: 0;
+    }
+    #desktopnav {
+        display: none;
+    }
+    #responsivenav {
+        display: contents;
+    }
+/*SEARCH-----------------------------------------------------------------*/
+    #search {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    label {
+        padding: 17px 15px 15px 15px;
+    }
+    .field {
+        padding: 13px 0px 13px 5px;
+        font-size: medium;
+    }
+    .btn1txt {
+        display: none;
+    }
+    .btn1 .fas {
+        display: contents;
+    }
+    .btn1 {
+        border-radius: 15px;
+    }
+    #filters {
+        flex-direction: column;
+    }
+    #btn2container{
+        flex-wrap: wrap;
+    } 
+    .btn2 {
+        margin-left: 0;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .btn2 .fas {
+        padding: 14px;
+    }
+/*RESULTS -------------------------------------------------------*/
+    #results {
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+    #results article {
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        border: none;
+    }
+    #left {
+        height: auto;
+        flex-direction: column;
+        align-content: center;
+        row-gap: 20px;
+    }
+    #left a {
+        width: 90%;
+    }
+    #left a p {
+        font-size: 0.9em;
+    }
+    #results article h2 , article h4 {
+        margin-left: 15px;
+    }
+/*LEFT ----------------------------------------------*/
+    aside {
+        width: auto;
+        height: auto;
+        border-radius: 0px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #right  p {
+        font-size: 0.8em;
+    }
+    #right a {
+        width: 90%;
+        height: 24%; 
+    }
+    #right a img {
+        width: 45%;
+    }
+    #righttitle {
+        width: 90%;
+    }
+    .stars {
+        padding-top: 25px;
+    }
+/*TILES -------------------------------------------------------------*/
+    #tilescontainer {
+        width: auto;
+        flex-direction: column;
+        align-content: center;
+        row-gap: 30px;
+    }
+    #tiles h2 {
+        margin-left: 15px;
+    }
+    .tiles1 {
+        width: 90%;
+        height: 200px;
+    }
+    .tiles1 img{
+        height: 70%;
+    }
+    .tiles2 {
+        width: 90%;
+        height: 430px;
+    }
+    #pics1 , #pics2 , #pics3 , #pics4 {
+        height: 200px;
+    }
+    #pics1 img , #pics2 img , #pics3 img , #pics4 img {
+        height: 70%;
+    }
+/*FOOTER -------------------------------------------------------------*/ 
+    footer {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    footer div {
+        width: auto;
+    }
+}
+
+
+
+/* BREAKPOINT 375PX ------*/
+
+@media (min-width: 375px) and (max-width: 767px)/*smartphone-m-l*/ {
+    body {
+        width: auto;
+        margin: 0;
+    }
+    main {
+        margin: 0;
+    }
+    h2 , h3 {
+        font-size: 1.4em;
+    }
+/*HEADER ----------------------------------------------------------------*/
+    header { 
+        margin: 0;
+    }
+    #desktopnav {
+        display: none;
+    }
+    #responsivenav {
+        display: contents;
+        width: 100%;
+    }
+/*SEARCH --------------------------------------------------------*/
+    #search {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .btn1txt {
+        display: none;
+    }
+    .btn1 .fas {
+        display: contents;
+    }
+    .btn1 {
+        border-radius: 15px;
+    }
+/*FILTERS------------------------------------------------------------------------*/
+    #filters {
+        flex-direction: column;
+    }
+    #btn2container{
+        flex-wrap: wrap;
+    } 
+    .btn2 {
+        margin-left: 0;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .btn2 .fas {
+        padding: 14px;
+    }
+/*RESULTS ---------------------------------------------------------*/
+    #results {
+        width: auto;
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+    #results article {
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        border: none;
+    }
+    #left {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-content: center;
+        row-gap: 20px;
+    }
+    #left a {
+        width: 90%;
+    }
+    #left a p {
+        font-size: 0.9em;
+    }
+    #results article h2 , article h4 {
+        margin-left: 15px;
+    }
+/*LEFT--------------------------------------------------------------*/
+    aside {
+        width: auto;
+        height: auto;
+        border-radius: 0px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .name {
+        font-size: medium;
+    }
+    #right a p {
+        font-size: 0.9em;
+    }
+    #right a {
+        width: 90%;
+        height: 26%; 
+    }
+    #right a img {
+        width: 45%;
+    }
+    #righttitle {
+        width: 90%;
+    }
+    .stars {
+        padding-top: 25px;
+    }
+/*TILES-------------------------------------------------------*/
+    #tilescontainer {
+        width: auto;
+        flex-direction: column;
+        align-content: center;
+        row-gap: 30px;
+    }
+    #tiles h2 {
+        margin-left: 15px;
+    }
+    .tiles1 {
+        width: 90%;
+        height: 200px;
+    }
+    .tiles1 img{
+        height: 70%;
+    }
+    .tiles2 {
+        width: 90%;
+        height: 430px;
+    }
+    #pics1 , #pics2 , #pics3 , #pics4 {
+        height: 200px;
+    }
+    #pics1 img , #pics2 img , #pics3 img , #pics4 img {
+        height: 70%;
+    }
+/*FOOTER -----------------------------------------------------------------*/ 
+    footer {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    footer div {
+        width: auto;
+    }
+}
+
+
+
+/*BREAKPOINT 768 ---------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1023px)/*tablet*/ {
+    body {
+        width: auto;
+        margin: 0;
+    }
+    main {
+        margin: 0;
+    }
+    h2 , h3 {
+        font-size: 1.3em;
+    }
+/*HEADER -----------------------------------------------------------------*/
+    header {
+        margin-right: 0;
+        margin-left: 5%;
+    }
+    nav ul li a {
+        margin-right: 0px;
+    }
+/*SEARCH ----------------------------------------------------*/
+    #search {
+        margin-left: 5%;
+    }
+/*RESULTS ----------------------------------------------------*/
+    #results p {
+        font-size: 0.9em;
+    }
+    #results article {
+        width: 60%;
+        height: auto;  
+        border-radius: 0px 15px 15px 0px;
+    }
+    #left {
+        height: auto;
+        row-gap: 20px;
+    }
+    #left a {
+        width: 42%;
+    }
+    #results article h2 , article h4 {
+        margin-left: 20px;
+    }
+
+    aside {
+        width: 37%;
+        height: auto;
+        border-radius: 15px 0px 0px 15px;
+    }
+    #right {
+        height: 90%;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+    #right a {
+        width: 93%;
+        height: 20%; 
+    }
+    #right a img {
+        width: 40%;
+    }
+    #righttitle {
+        width: 95%;
+    }
+/*TILES ----------------------------------------------------------------------*/
+    #tiles h2 {
+        margin-left: 20px;
+    }
+    #tilescontainer {
+        justify-content: space-around;
+        row-gap: 30px;
+    }
+/*FOOTER ----------------------------------------------------------------*/
+    footer {
+       margin-top: 50px;
+       justify-content: space-around;
+    }
+    footer div {
+        margin-left: 0;
+    }
+}
+
+/* BREAKPOINT 1024 -----------------------------------------------------------*/
+
+@media (min-width: 1024px) and (max-width: 1239px)/*laptop-s-m*/ {
+    body {
+        width: auto;
+        margin: 0;
+    }
+    main {
+        margin: 0;
+    }
+    h2 , h3 {
+        font-size: 1.3em;
+    }
+/*HEADER ---------------------------------------------------------------*/
+    header {
+        margin-right: 0;
+        margin-left: 5%;
+    }
+    nav ul li a {
+        margin-right: 0px;
+    }
+/*SEARCH ---------------------------------------------------------*/
+    #search {
+        margin-left: 5%;
+    }
+/*RESULTS ------------------------------------------------------*/
+    #results article {
+        width: 60%;
+        height: auto;
+    }
+    #left {
+        height: auto;
+    }
+    #left a {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        width: 35%;
+        height: auto;
+    }
+    #right {
+        height: 90%;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+    #right a {
+        width: 90%;
+        height: 22%; 
+    }
+    #right a img {
+        width: 45%;
+    }
+    #righttitle {
+        width: 90%;
+    }
+/*TILES -----------------------------------------------------------------*/
+    #tilescontainer {
+        justify-content: space-around
+    }
+    #tiles h2 {
+        margin-left: 35px;
+    }
+/*FOOTER -------------------------------------------------------------------*/
+    footer {
+       margin-top: 50px;
+       justify-content: space-around;
+    }
+    footer div {
+        margin-left: 0;
+    }
+}
+
+
+
+/* BREAKPOINT 1240 PX ---------------------------------------------------- */
+
+@media (min-width: 1240px) and (max-width: 1680px)/*laptop-l*/ {
+    body {
+        width: auto;
+        margin: 0;
+    }
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+/*HEADER -----------------------------------------------------------------------*/
+    header {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+/*RESULTS--------------------------------------------------------------*/
+    #results article {
+        width: 60%;
+        height: auto;
+    }
+    #left {
+        height: auto;
+    }
+    #left a {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        width: 35%;
+        height: auto;
+    }
+    #right {
+        height: 90%;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+    #right a {
+        width: 90%;
+        height: 22%; 
+    }
+    #right a img {
+        width: 45%;
+    }
+    #righttitle {
+        width: 90%;
+    }
+/*TILES ------------------------------------------------------------------------------------*/
+    #tilescontainer {
+        justify-content: space-around
+    }
+    #tiles h2 {
+        margin-left: 35px;
+    }
+/*FOOTER  ------------------------------------------------------------------------------*/
+    footer {
+       margin-top: 50px;
+       justify-content: space-around;
+    }
+    footer div {
+        margin-left: 0;
+    }
+}
