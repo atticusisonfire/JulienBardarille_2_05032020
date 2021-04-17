@@ -1,18 +1,11 @@
-@font-face {
-    font-family: 'Raleway-VariableFont_wght';
-    src: url('fonts/Raleway-VariableFont_wght.ttf');
-}
-@font-face { 
-    font-family: 'Raleway-ExtraBold';
-    src: url('fonts/Raleway-ExtraBold.ttf');   
-}
 body { 
     width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: 'Raleway-VariableFont_wght', sans-serif , serif;
+    font-family: 'Raleway', sans-serif , serif;
 }
+
 header { 
     margin-right: 10%;
     margin-left: 10%;
@@ -29,13 +22,14 @@ footer {
     background-color: #F2F2F2;
 }
 h1 , h2 , h3 , h4 {
-    font-family: 'Raleway-ExtraBold', sans-serif , serif;
+    font-family: 'Raleway', sans-serif , serif;
 }
 h1 , h2 , h3 {
     font-size: x-large;
 }
 a {
     text-decoration: none;
+    color: black;
 }
 p {
     color: black;
@@ -48,8 +42,10 @@ nav ul {
 }
 nav ul li a {
     margin-right: 20px;
-    padding: 15px 20px 0 20px;     
+    padding: 14px 15px 0 20px;     
 }
+
+
 #desktopnav {
     display: flex;
     flex-direction: row;
@@ -59,10 +55,14 @@ nav ul li a {
     color: #0065FC;
     border-top: #0065FC 2px solid;  
 }
+
 nav span {
-    font-family: 'Raleway-ExtraBold' , sans-serif , serif;
+    font-family: 'Raleway' , sans-serif , serif;
     color: #0065FC;
 }
+
+
+
 #responsivenav {
     display: none;
 }
@@ -129,7 +129,14 @@ form {
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
+    
 }
+
+
+form  {
+    font-weight: bold;
+}
+
 h1 {
     margin-bottom: -5px;
 }
@@ -138,8 +145,14 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    font-family: 'Raleway-ExtraBold' , sans-serif , serif;
+    font-family: 'Raleway' , sans-serif , serif;
 }
+
+#filters p {
+    font-weight: bold;
+   
+}
+
 #btn2container { 
     display: flex;
     flex-direction: row;
@@ -161,8 +174,9 @@ h1 {
     margin-left: 30px;
     margin-bottom: 2%;   
     outline: none;
-    font-family: 'Raleway-ExtraBold' , sans-serif , serif;
+    font-family: 'Raleway' , sans-serif , serif;
     font-size: medium;
+    font-weight: bold;
 }
 .btn2 .fas {
     margin-right: 10px;
@@ -198,7 +212,8 @@ h1 {
     margin-top: 3%;
 }
 #results span {
-    font-family: 'Raleway-ExtraBold' , sans-serif , serif;
+    font-family: 'Raleway' , sans-serif , serif;
+    font-weight: bold;
 }
 #results article h2 , article h4 {
     margin-left: 40px;
@@ -221,6 +236,7 @@ h1 {
     justify-content: space-evenly;
     align-content: space-between;
 }
+
 #left a {
     width: 270px;
     height: 200px;
@@ -247,7 +263,7 @@ h1 {
     color: #d9d9d9;
     font-size:  0.9em;
 }
-/*-------Left-------*/
+
 aside {
     width: 30%;
     height: 630px;
@@ -299,6 +315,10 @@ aside {
 #tiles {
     margin-top: 5%;
 }
+
+#tiles p {
+    font-weight: bold;
+}
 #tilescontainer {
     display: flex;
     flex-direction: row;
@@ -306,7 +326,7 @@ aside {
     flex-wrap: wrap;
 }
 #tilescontainer p {
-    font-family: 'Raleway-ExtraBold' , sans-serif , serif;
+    font-family: 'Raleway' , sans-serif , serif;
     padding-left: 20px;
 }
 .tiles1 {
@@ -823,68 +843,3 @@ footer div {
 }
 
 
-
-/* BREAKPOINT 1240 PX ---------------------------------------------------- */
-
-@media (min-width: 1240px) and (max-width: 1680px)/*laptop-l*/ {
-    body {
-        width: auto;
-        margin: 0;
-    }
-    main {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-/*HEADER -----------------------------------------------------------------------*/
-    header {
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-/*RESULTS--------------------------------------------------------------*/
-    #results article {
-        width: 60%;
-        height: auto;
-    }
-    #left {
-        height: auto;
-    }
-    #left a {
-        width: 40%;
-        margin-bottom: 20px;
-    }
-
-    aside {
-        width: 35%;
-        height: auto;
-    }
-    #right {
-        height: 90%;
-        justify-content: space-around;
-        margin-bottom: 60px;
-    }
-    #right a {
-        width: 90%;
-        height: 22%; 
-    }
-    #right a img {
-        width: 45%;
-    }
-    #righttitle {
-        width: 90%;
-    }
-/*TILES ------------------------------------------------------------------------------------*/
-    #tilescontainer {
-        justify-content: space-around
-    }
-    #tiles h2 {
-        margin-left: 35px;
-    }
-/*FOOTER  ------------------------------------------------------------------------------*/
-    footer {
-       margin-top: 50px;
-       justify-content: space-around;
-    }
-    footer div {
-        margin-left: 0;
-    }
-}
